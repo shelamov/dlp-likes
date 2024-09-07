@@ -1,0 +1,53 @@
+.dlp-likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.dlp-likes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.dlp-likes__item svg {
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: #808080;
+  stroke-width: 2px;
+}
+.dlp-likes__item:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffbd3b;
+}
+.dlp-likes__item:hover svg {
+  stroke: #ffbd3b;
+}
+.dlp-likes__item_plus.active {
+  color: #00a860;
+}
+.dlp-likes__item_plus.active svg {
+  stroke: #00a860;
+}
+.dlp-likes__item_minus svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.dlp-likes__item_minus.active {
+  color: #d1204b;
+}
+.dlp-likes__item_minus.active svg {
+  stroke: #d1204b;
+}
+.dlp-likes__counter {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

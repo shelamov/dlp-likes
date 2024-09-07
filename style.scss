@@ -1,0 +1,54 @@
+$colorBtn: #d1204b;
+$colorYellow: #ffbd3b;
+$colorGreen: #00a860;
+$colorGrey2: #808080;
+
+.dlp-likes {
+  display: flex;
+  gap: 15px;
+  &__item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: transparent;
+      stroke: $colorGrey2;
+      stroke-width: 2px;
+    }
+    &:hover {
+      transition: all 0.3s;
+      color: $colorYellow;
+      svg {
+        stroke: $colorYellow;
+      }
+    }
+    &_plus {
+      &.active {
+        color: $colorGreen;
+        svg {
+          stroke: $colorGreen;
+        }
+      }
+    }
+
+    &_minus {
+      svg {
+        transform: rotate(180deg);
+      }
+      &.active {
+        color: $colorBtn;
+        svg {
+          stroke: $colorBtn;
+        }
+      }
+    }
+  }
+
+  &__counter {
+    font-size: 14px;
+  }
+}
