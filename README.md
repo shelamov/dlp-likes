@@ -2,6 +2,8 @@
 
 Готовый модуль лайков/дизлайков.
 
+https://codepen.io/shelamov/pen/GRbPYRr
+
 ## Логика работы
 
 ### Состояние - нечего изначально не активировано
@@ -30,7 +32,7 @@
 
 ===============================================================================
 
-# The likes module
+# likes module
 
 Ready-made like/dislike module.
 
@@ -48,17 +50,14 @@ The element that was clicked on increases, and the one that was clicked on earli
 
 When you click on the active like again, it resets to its original state
 
-## Management
+## Control
 
 To set an additional like, set the `active` selector for the user.
-``html
 
-<div class="dlp likes__item dlp likes__item_minus active">
-...
-divisions
+```html
+<div class="dlp-likes__item dlp-likes__item_minus active">...</div>
 ```
-``html
-<div class="dlp likes__of the element dlp likes__of the element_plus are active">
-...
-divisions
-``
+
+```html
+<div class="dlp-likes__item dlp-likes__item_plus active">...</div>
+```
